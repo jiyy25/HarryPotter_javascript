@@ -25,7 +25,7 @@
         <div class="">
             <h1 class="text-center p-2"><img src="./img/logo.png" alt="로고"></h1>
             <div class="hdbg">
-                <ul class="gnb d-flex align-items-center justify-content-between container">
+                <ul class="gnb d-flex align-items-center justify-content-between container mb-0">
                     <li><a href="">NEWS & FEATURES</a></li>
                     <li><a href="">QUIZZES & PUZZLES</a></li>
                     <li><a href="">HOGWARTS SORTING</a></li>
@@ -36,12 +36,95 @@
 
         </div>
     </header>
-    <section id="swiper"></section>
-    <section id="tapQuiz"></section>
+    <section id="main_swiper">
+        <div class="swiper position-relative">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/swiper_0.jpg" alt="">
+                    <div class="text-overlay position-absolute act">
+                        <h2>Pottermore<br>
+                            Wizarding World</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swiper_1.jpg" alt="">
+                    <div class="text-overlay position-absolute act">
+                        <h2>기숙사 분류모자를 쓰고<br>
+                            당신의 기숙사를 찾아보세요</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swiper_2.jpg" alt="">
+                    <div class="text-overlay position-absolute act">
+                        <h2>크리스마스에 어울리는<br>
+                            마법초상화를 만들어보세요</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
+    <section id="tapQuiz">
+        <div class="container">
+            <h2 class="text-center">The Harry's first Christmas at<br>
+                Hogwarts crossword</h2>
+            <div class="tapbox position-relative">
+                <ul class="Qchapter d-flex mb-0 ">
+                    <li><a href="">1step</a></li>
+                    <li><a href="">2step</a></li>
+                    <li><a href="">3step</a></li>
+                </ul>
+                <span class="highlight position-absolute"></span>
+            </div>
+
+            <div class="contentBox">
+                <div class="imgbox d-flex">
+                    <img src="./img/christmas_2.jpg" alt="크리스마스">
+                    <div class="desc">
+                        <p class="m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellat
+                            iusto
+                            cupiditate praesentium libero nihil, quisquam illum natus, minus iure quos, explicabo
+                            ducimus
+                            similique accusantium. Totam nostrum cupiditate quam natus!</p>
+                    </div>
+                </div>
+                <div class="imgbox d-flex none">
+                    <img src="./img/christmas_1.jpg" alt="크리스마스">
+                    <div class="desc">
+                        <p class="m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellat
+                            iusto
+                            cupiditate praesentium libero nihil, quisquam illum natus, minus iure quos, explicabo
+                            ducimus
+                            similique accusantium. Totam nostrum cupiditate quam natus!</p>
+                    </div>
+                </div>
+                <div class="imgbox d-flex none">
+                    <img src="./img/christmas_0.jpg" alt="크리스마스">
+                    <div class="desc">
+                        <p class="m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellat
+                            iusto
+                            cupiditate praesentium libero nihil, quisquam illum natus, minus iure quos, explicabo
+                            ducimus
+                            similique accusantium. Totam nostrum cupiditate quam natus!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <footer>
         <p></p>
         <h1></h1>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/tap.js"></script>
 </body>
 
 </html>

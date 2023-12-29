@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "NanumSquareNeo-Variable";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
@@ -15,9 +16,9 @@ html {
 }
 
 body {
-  height: 100%;
+  font-family: "NanumSquareNeo";
+  color: #F0ECE5;
   background: rgb(49, 48, 77);
-  background: linear-gradient(0deg, rgb(49, 48, 77) 0%, rgba(49, 48, 77, 0.4206932773) 50%, rgb(49, 48, 77) 100%);
 }
 body * {
   list-style: none;
@@ -38,4 +39,70 @@ body #hd .hdbg {
 }
 body #hd .hdbg ul {
   padding: 10px 0;
+}
+body #main_swiper .swiper img {
+  background-size: cover;
+  width: 100%;
+}
+body #main_swiper .swiper .text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translateY(50%);
+  color: #fff;
+  /* 텍스트 색상 */
+  text-align: center;
+  opacity: 0;
+  font-family: "FOUREYES", sans-serif;
+}
+body #main_swiper .swiper .text-overlay h2 {
+  font-size: 3.5rem;
+}
+body #main_swiper .swiper .text-overlay.act {
+  transition: 0.5s;
+  top: 40%;
+  transform: translateY(10%);
+  opacity: 1;
+}
+body #tapQuiz h2 {
+  margin: 100px 0;
+}
+body #tapQuiz .tapbox .Qchapter li {
+  padding: 0 30px;
+  height: 50px;
+  background-color: #F0ECE5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "moul";
+  margin: 0 0.2rem;
+}
+body #tapQuiz .tapbox .Qchapter li a {
+  display: block;
+  z-index: 99999;
+  position: relative;
+  color: #161A30;
+}
+body #tapQuiz .tapbox .highlight {
+  width: 106px;
+  top: 0;
+  left: 43px;
+  bottom: 0;
+  background-color: rgba(252, 164, 164, 0.5137254902);
+  transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body #tapQuiz .imgbox {
+  margin-bottom: 1rem;
+}
+body #tapQuiz .imgbox.none {
+  display: none !important;
+}
+body #tapQuiz .imgbox img {
+  width: 700px;
+}
+body #tapQuiz .imgbox .desc {
+  background-color: rgba(240, 236, 229, 0.568627451);
 }

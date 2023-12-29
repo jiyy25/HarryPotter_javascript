@@ -23,9 +23,9 @@ body {
         color: inherit;
     }
 
-    height: 100%;
+    font-family: 'NanumSquareNeo';
+    color: #F0ECE5;
     background: rgb(49, 48, 77);
-    background: linear-gradient(0deg, rgba(49, 48, 77, 1) 0%, rgba(49, 48, 77, 0.4206932773109243) 50%, rgba(49, 48, 77, 1) 100%);
 
     a {
         &:hover {
@@ -41,8 +41,107 @@ body {
 
         .hdbg {
             background-color: #161A30;
-            ul{
+
+            ul {
                 padding: 10px 0;
+            }
+        }
+    }
+
+    #main_swiper {
+        .swiper {
+            img {
+                background-size: cover;
+                // height: 600px;
+                width: 100%;
+
+            }
+
+            .text-overlay {
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+                transform: translateY(50%);
+                color: #fff;
+                /* 텍스트 색상 */
+                text-align: center;
+                opacity: 0;
+                font-family: 'FOUREYES', sans-serif;
+
+                h2 {
+                    font-size: 3.5rem;
+                }
+
+
+
+                &.act {
+                    transition: .5s;
+                    top: 40%;
+                    transform: translateY(10%);
+                    opacity: 1;
+                }
+            }
+
+
+        }
+    }
+
+    #tapQuiz {
+        h2 {
+            margin: 100px 0;
+        }
+
+        .tapbox {
+            .Qchapter {
+                li {
+                    // width: 123px;
+                    padding: 0 30px;
+                    height: 50px;
+                    background-color: #F0ECE5;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-family: 'moul';
+                    margin: 0 0.2rem;
+
+                    a {
+                        display: block;
+                        z-index: 99999;
+                        position: relative;
+                        color: #161A30;
+                    }
+                }
+            }
+
+            .highlight {
+                width: 106px;
+                top: 0;
+                left: 43px;
+                bottom: 0;
+                background-color: #fca4a483;
+                transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        }
+
+        .imgbox {
+            margin-bottom: 1rem;
+
+            &.none {
+                display: none !important;
+            }
+
+            img {
+                width: 700px;
+            }
+
+            .desc {
+                background-color: #f0ece591;
+
+
             }
         }
     }
