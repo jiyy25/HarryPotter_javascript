@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FOUREYES";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/FOUREYES.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "FOUREYES";
+  color: #F0ECE5;
+  background: rgb(49, 48, 77);
+}
+body * {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+body a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+body #hd {
+  background-color: #31304D;
+  color: #F0ECE5;
+  font-family: "koho", sans-serif;
+}
+body #hd .hdbg {
+  background-color: #161A30;
+}
+body #hd .hdbg ul {
+  padding: 10px 0;
+}
+body #accodion .title {
+  background-color: #B6BBC4;
+  border-radius: 20px;
+}
+body #accodion button {
+  color: #161A30;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+body #accodion .accMenu {
+  border-radius: 20px;
+}
+body #accodion .accMenu .subTitle {
+  font-size: 1.5rem;
+  background-color: #B6BBC4;
+  border-radius: 20px;
+  padding: 10px;
+}
+body #accodion .accMenu .desc {
+  display: none;
+  border-radius: 20px;
+}
+body #accodion .accMenu .desc.active {
+  display: block;
+}
+body #accodion .accMenu .desc strong {
+  font-size: 1.2rem;
+}
+body #accodion div > div {
+  margin: 20px 0;
+  background-color: #F0ECE5;
+  color: #161A30;
+}
+body #accodion div > div div {
+  padding: 10px;
+  line-height: 1.8;
+}
+body #go-top {
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  bottom: 130px;
+  text-align: center;
+  font-family: "moul", sans-serif;
+  font-size: 1.2rem;
+  transition: opacity 0.8;
+}
+body #go-top.none {
+  display: none !important;
+  opacity: 1;
+}
+body #go-top img {
+  width: 133px;
+}
+body #bgpic div {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+body #dormitory {
+  font-family: "NanumSquareNeo-Variable";
+}
+body #dormitory .btnArea {
+  text-align: center;
+}
+body #dormitory .btnArea button {
+  color: #161A30;
+  border-radius: 10px;
+}
+body #dormitory .btnArea button:hover {
+  color: #F0ECE5;
+  background-color: #161A30;
+}
+body #dormitory img {
+  width: 300px;
+}
+body #footer {
+  background-color: #161A30;
+  font-family: "NanumSquareNeo-Variable";
+}
+body #footer p {
+  font-size: 12px;
+}
+body #footer img {
+  width: 10rem;
+}
